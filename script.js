@@ -22,14 +22,18 @@ document.addEventListener("DOMContentLoaded", async () => {
             search.click();
         }
     });
-    search.addEventListener("click", searchLocation);
 
-    await searchLocation();
+
+    await searchLocation("Islamabad");
     document.getElementById("info").classList.remove("loading");
+    search.addEventListener("click", () => {
+        const location = document.getElementById("location").value;
+        searchLocation(location);
+    });
+
 
 });
-async function searchLocation() {
-    const location = document.getElementById("location").value;
+async function searchLocation(location) {
     if (!location) return;
 
     console.log("searched up " + location);
