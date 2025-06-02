@@ -42,3 +42,11 @@ body{
 #location:focus{
      border: 1px solid rgb(193, 86, 9);
 }
+
+.container{
+    height: calc(100vh - 67.7px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
