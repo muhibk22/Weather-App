@@ -70,3 +70,7 @@ body{
 .weather,.temprature{
     font-size: 4rem;
 }
+
+.loading{
+    display: none;
+}
