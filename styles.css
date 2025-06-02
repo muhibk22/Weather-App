@@ -27,6 +27,10 @@ body{
     padding: 5px;
     border: 1px solid rgb(156, 225, 232);
     border-radius: 4px;
+    transition: background-color 0.15s;
+}
+#submit:hover{
+    background-color: rgba(141, 198, 198, 0.9);
 }
 
 #submit:hover{
@@ -46,7 +50,8 @@ body{
 }
 
 .container{
-    height: calc(100vh - 67.7px);
+    margin: 0 8px;
+    height: calc(100dvh - 67.7px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +71,7 @@ body{
 
 .address{
     font-size: 3rem;
+    text-align: center;
 }
 .weather,.temprature{
     font-size: 4rem;
