@@ -10,11 +10,13 @@ body{
     font-family: "Sunflower";
     font-weight: 300;
     font-style: normal;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .search-bar{
     width: 100vw;
-    background-color: pink;
     display: flex;
     justify-content: flex-end;
     margin: 15px 0;
@@ -49,4 +51,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 rgba(0, 0, 0, 0.6),
+     1px -1px 0 rgba(0, 0, 0, 0.6),
+    -1px  1px 0 rgba(0, 0, 0, 0.6),
+     1px  1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.sub-data{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.address{
+    font-size: 3rem;
+}
+.weather,.temprature{
+    font-size: 4rem;
 }
